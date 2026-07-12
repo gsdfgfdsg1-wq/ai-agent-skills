@@ -10,7 +10,7 @@
 | done | Dockerfile 最佳实践检查 | 检查 Dockerfile 的安全与体积问题 | dockerfile-lint |
 | done | OpenAPI 契约测试 | 校验实现与 API 契约是否一致 | api-contract-test |
 | done | 变更日志生成器 | 根据 git 历史自动生成 CHANGELOG | changelog-generator |
-| pending | 依赖许可证审计 | 检查依赖的许可证是否合规 | license-auditor |
+| done | 依赖许可证审计 | 检查依赖的许可证是否合规 | license-auditor |
 | pending | 无障碍审计 | 检查前端常见 a11y 问题 | a11y-audit |
 | pending | 性能预算检查 | CI 中校验包体积/性能预算 | perf-budget |
 | pending | i18n 文案抽取 | 从代码中抽取待翻译文案 | i18n-extractor |
