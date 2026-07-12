@@ -1,9 +1,10 @@
 # 技能目录 (Skills Catalog)
 
-> 自动生成，共 7 个技能模块。请勿手动编辑，运行 `python tools/build_catalog.py` 更新。
+> 自动生成，共 8 个技能模块。请勿手动编辑，运行 `python tools/build_catalog.py` 更新。
 
 | 模块 | 说明 |
 | --- | --- |
+| [a11y-audit](skills/a11y-audit/) | Statically audit HTML for common accessibility issues including missing document language, image alt text, control labels, accessible button names, heading jumps, and duplicate IDs. |
 | [api-contract-test](skills/api-contract-test/) | Validate HTTP response status codes and JSON bodies against OpenAPI 3 JSON response schemas without external dependencies. Supports local refs and common JSON Schema constraints. |
 | [changelog-generator](skills/changelog-generator/) | Generate grouped Markdown changelogs from git history using Conventional Commit messages. Supports revision ranges, release versions, dates, short hashes, and file output without dependencies. |
 | [conventional-commit](skills/conventional-commit/) | Validate and generate commit messages that follow the Conventional Commits 1.0.0 specification — type(scope)!: description format, body wrapping, footers. |
