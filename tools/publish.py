@@ -85,11 +85,11 @@ def main():
         if url.startswith("https://") and "@" not in url:
             # origin has no credentials yet — inject the token.
             authed = url.replace("https://", f"https://x-access-token:{token}@", 1)
-            p = run(["git", "push", authed, "HEAD"])
+            p = run(["git", "push", authed, "main"])
         else:
             # origin already carries credentials (e.g. set during a previous
             # push) — use it directly to avoid double-injecting the token.
-            p = run(["git", "push", url, "HEAD"])
+            p = run(["git", "push", url, "main"])
     except subprocess.TimeoutExpired:
         print("Push timed out (network likely blocked). Committed locally; "
               "re-run publish.py with network access to push.")
