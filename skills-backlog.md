@@ -55,3 +55,33 @@
 | done | TODO 转 Issue | 将代码中的 TODO 注释转为 GitHub Issue 格式 | todo-to-issue |
 | done | 死代码检测 | 检测 Python 中未使用的导入和不可达代码 | py-dead-code |
 | done | 包体积趋势 | 对比两次构建的产物体积，输出涨跌报告 | bundle-size-delta |
+| done | 文件哈希校验 | 计算和验证文件 MD5/SHA1/SHA256/SHA512 哈希 | hash-checker |
+| done | 时间戳转换 | 在 Unix 时间戳、ISO 8601、可读日期之间互相转换 | timestamp-converter |
+| done | 颜色格式转换 | 在 HEX/RGB/HSL 颜色格式之间互相转换 | color-converter |
+| done | JSONPath 查询 | 用 JSONPath 表达式查询 JSON/JSONL 文件 | json-path-query |
+| done | CSV 转 JSON | 将 CSV 文件转为 JSON，支持类型推断 | csv-to-json |
+| done | URL 编解码 | 编码/解码 URL 和查询参数 | url-encoder |
+| done | JSON 扁平化 | 将嵌套 JSON 展开/还原为扁平键值结构 | json-flattener |
+| done | XML 转 JSON | 将 XML 文件转换为 JSON 格式 | xml-to-json |
+| done | UUID 生成与校验 | 生成 UUID v4/v5 并校验 UUID 格式 | uuid-generator |
+| done | Gzip 压缩工具 | 压缩/解压 gzip 文件 | gzip-toolkit |
+| pending | MIME 类型检测 | 根据文件内容/扩展名检测 MIME 类型 | mime-type-checker |
+| pending | Unicode 字符查询 | 查询 Unicode 字符的名称、分类和码位 | unicode-info |
+| pending | Python 依赖提取 | 从 Python 源码中提取 import 生成 requirements | pip-req-extractor |
+| pending | Nginx 配置检查 | 检查 nginx 配置文件的常见问题 | nginx-config-lint |
+| pending | Docker Compose 检查 | 检查 docker-compose YAML 的最佳实践 | docker-compose-lint |
+| pending | Makefile 检查 | 检查 Makefile 的常见问题和风格 | makefile-lint |
+| pending | JSON 排序 | 递归排序 JSON 键名 | json-sort |
+| pending | CSV 合并 | 按共同键列合并多个 CSV 文件 | csv-merge |
+| pending | 文本差异比较 | 逐词文本差异对比，分类增删改 | text-diff |
+| pending | UTF-8 校验 | 验证文件是否为有效 UTF-8 编码 | utf8-validator |
+| pending | INI 配置解析 | 解析和校验 INI 配置文件 | ini-parser |
+| pending | TOML 检查 | 检查和校验 TOML 配置文件 | toml-linter |
+| pending | 端口检查 | 检查主机指定 TCP 端口是否开放 | port-checker |
+| pending | Markdown 转 HTML | 将 Markdown 转为独立 HTML 文件 | markdown-to-html |
+| pending | HTML 表格提取 | 从 HTML 中提取表格数据为 CSV/JSON | html-table-extractor |
+| pending | JSON Patch | 应用 RFC 6902 JSON Patch 操作 | json-patch |
+| pending | Dotenv 文档生成 | 从 .env 文件生成文档 | envdoc |
+| pending | QR 码生成 | 从文本/URL 生成 SVG 格式 QR 码 | qr-code-generator |
+| pending | Tar 归档工具 | 列出/解压/创建 tar 归档 | tar-toolkit |
+| pending | 差异高亮 | 生成带颜色高亮的并排差异对比 | diff-highlight |
