@@ -6,7 +6,7 @@
 | --- | --- | --- | --- |
 | done | 密钥泄露扫描器 | 扫描代码库中的 API Key / 私钥等敏感信息 | secret-leak-scanner |
 | done | 约定式提交助手 | 生成符合 Conventional Commits 的提交信息 | conventional-commit |
-| pending | PR 审查清单 | 提交前自动对照常见 PR 审查项 | pr-review-checklist |
+| done | PR 审查清单 | 提交前自动对照常见 PR 审查项 | pr-review-checklist |
 | pending | Dockerfile 最佳实践检查 | 检查 Dockerfile 的安全与体积问题 | dockerfile-lint |
 | pending | OpenAPI 契约测试 | 校验实现与 API 契约是否一致 | api-contract-test |
 | pending | 变更日志生成器 | 根据 git 历史自动生成 CHANGELOG | changelog-generator |
