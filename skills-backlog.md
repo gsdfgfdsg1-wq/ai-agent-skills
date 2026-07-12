@@ -14,4 +14,4 @@
 | done | 无障碍审计 | 检查前端常见 a11y 问题 | a11y-audit |
 | done | 性能预算检查 | CI 中校验包体积/性能预算 | perf-budget |
 | done | 构建产物体积报告 | 递归统计并排序构建产物的文件体积 | bundle-file-report |
-| pending | i18n 文案抽取 | 从代码中抽取待翻译文案 | i18n-extractor |
+| done | i18n 文案抽取 | 从代码中抽取待翻译文案 | i18n-extractor |
