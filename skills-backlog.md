@@ -35,16 +35,16 @@
 | done | JSON Schema 校验 | 用 JSON Schema 校验 JSON 文件的字段类型、必填项和约束 | json-schema-linter |
 | done | OpenAPI 转 Markdown | 将 OpenAPI/Swagger JSON 转为可读 Markdown 文档 | openapi-to-markdown |
 | done | SVG 精简优化 | 移除 SVG 中的元数据/注释/空白，输出精简 SVG | svg-optimizer |
-| pending | npm 审计摘要 | 解析 npm audit 输出，按严重性分类汇总 | npm-audit-summary |
-| pending | 依赖图生成 | 分析 package.json / requirements.txt 生成依赖关系数据 | dep-graph-generator |
-| pending | HTTP 安全头检查 | 检查 URL 返回的 HTTP 安全响应头 | http-header-checker |
-| pending | SSL 证书检查 | 检查域名的 SSL 证书有效期和基本信息 | ssl-cert-checker |
-| pending | DNS 记录查询 | 查询域名的 A/CNAME/MX/TXT 等 DNS 记录 | dns-lookup |
-| pending | IP 地理查询 | 查询 IP 地址的地理位置信息 | ip-geo-lookup |
-| pending | CSS 未使用选择器 | 在 HTML 中查找未被引用的 CSS 选择器 | css-unused-finder |
-| pending | HTML 压缩 | 移除 HTML 中的空白/注释，输出压缩版本 | html-minifier |
-| pending | SQL 注入扫描 | 在代码中搜索潜在 SQL 注入模式 | sql-injection-scanner |
-| pending | Terraform Plan 摘要 | 解析 terraform plan JSON 输出，生成变更摘要 | terraform-plan-summarizer |
+| done | npm 审计摘要 | 解析 npm audit 输出，按严重性分类汇总 | npm-audit-summary |
+| done | 依赖图生成 | 分析 package.json / requirements.txt 生成依赖关系数据 | dep-graph-generator |
+| done | HTTP 安全头检查 | 检查 URL 返回的 HTTP 安全响应头 | http-header-checker |
+| done | SSL 证书检查 | 检查域名的 SSL 证书有效期和基本信息 | ssl-cert-checker |
+| done | DNS 记录查询 | 查询域名的 A/CNAME/MX/TXT 等 DNS 记录 | dns-lookup |
+| done | IP 地理查询 | 查询 IP 地址的地理位置信息 | ip-geo-lookup |
+| done | CSS 未使用选择器 | 在 HTML 中查找未被引用的 CSS 选择器 | css-unused-finder |
+| done | HTML 压缩 | 移除 HTML 中的空白/注释，输出压缩版本 | html-minifier |
+| done | SQL 注入扫描 | 在代码中搜索潜在 SQL 注入模式 | sql-injection-scanner |
+| done | Terraform Plan 摘要 | 解析 terraform plan JSON 输出，生成变更摘要 | terraform-plan-summarizer |
 | pending | K8s Manifest 检查 | 检查 Kubernetes YAML 的资源限制、标签等最佳实践 | k8s-manifest-lint |
 | pending | 正则表达式测试 | 用正则匹配样本字符串，输出匹配结果 | regex-tester |
 | pending | Base64 编解码 | 编码/解码 base64，自动检测编码格式 | base64-toolkit |
