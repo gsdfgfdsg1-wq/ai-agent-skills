@@ -45,13 +45,13 @@
 | done | HTML 压缩 | 移除 HTML 中的空白/注释，输出压缩版本 | html-minifier |
 | done | SQL 注入扫描 | 在代码中搜索潜在 SQL 注入模式 | sql-injection-scanner |
 | done | Terraform Plan 摘要 | 解析 terraform plan JSON 输出，生成变更摘要 | terraform-plan-summarizer |
-| pending | K8s Manifest 检查 | 检查 Kubernetes YAML 的资源限制、标签等最佳实践 | k8s-manifest-lint |
-| pending | 正则表达式测试 | 用正则匹配样本字符串，输出匹配结果 | regex-tester |
-| pending | Base64 编解码 | 编码/解码 base64，自动检测编码格式 | base64-toolkit |
-| pending | Dotenv 对比 | 对比不同环境的 .env 文件，输出差异 | dotenv-comparator |
-| pending | Git 分支清理 | 查找已合并的本地分支和过期远程分支 | git-branch-cleaner |
-| pending | Swagger 转 Markdown | 同 openapi-to-markdown 的 OpenAPI 2.0 版本 | swagger-to-markdown |
-| pending | 图片元数据提取 | 提取图片的 EXIF/尺寸/格式信息 | image-meta-scraper |
-| pending | TODO 转 Issue | 将代码中的 TODO 注释转为 GitHub Issue 格式 | todo-to-issue |
-| pending | 死代码检测 | 检测 Python 中未使用的导入和不可达代码 | py-dead-code |
-| pending | 包体积趋势 | 对比两次构建的产物体积，输出涨跌报告 | bundle-size-delta |
+| done | K8s Manifest 检查 | 检查 Kubernetes YAML 的资源限制、标签等最佳实践 | k8s-manifest-lint |
+| done | 正则表达式测试 | 用正则匹配样本字符串，输出匹配结果 | regex-tester |
+| done | Base64 编解码 | 编码/解码 base64，自动检测编码格式 | base64-toolkit |
+| done | Dotenv 对比 | 对比不同环境的 .env 文件，输出差异 | dotenv-comparator |
+| done | Git 分支清理 | 查找已合并的本地分支和过期远程分支 | git-branch-cleaner |
+| done | Swagger 转 Markdown | 同 openapi-to-markdown 的 OpenAPI 2.0 版本 | swagger-to-markdown |
+| done | 图片元数据提取 | 提取图片的 EXIF/尺寸/格式信息 | image-meta-scraper |
+| done | TODO 转 Issue | 将代码中的 TODO 注释转为 GitHub Issue 格式 | todo-to-issue |
+| done | 死代码检测 | 检测 Python 中未使用的导入和不可达代码 | py-dead-code |
+| done | 包体积趋势 | 对比两次构建的产物体积，输出涨跌报告 | bundle-size-delta |
