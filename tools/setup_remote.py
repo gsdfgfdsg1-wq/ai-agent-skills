@@ -38,7 +38,7 @@ def _api(method, path, token, data=None):
         req.add_header("Content-Type", "application/json")
         req.data = json.dumps(data).encode()
     try:
-        with urllib.request.urlopen(req) as resp:
+        with urllib.request.urlopen(req, timeout=20) as resp:
             return resp.getcode(), json.loads(resp.read().decode() or "{}")
     except urllib.error.HTTPError as e:
         body = e.read().decode()

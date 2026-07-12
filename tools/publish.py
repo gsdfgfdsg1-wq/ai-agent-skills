@@ -35,7 +35,9 @@ def _load_dotenv():
 
 
 def run(cmd):
-    return subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True)
+    # timeout keeps the pipeline from hanging forever if the network is blocked
+    # (e.g. in a sandboxed automation environment) — it fails fast instead.
+    return subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True, timeout=120)
 
 
 def main():
@@ -79,11 +81,16 @@ def main():
         return
 
     url = remote.stdout.strip()
-    if url.startswith("https://"):
-        authed = url.replace("https://", f"https://x-access-token:{token}@", 1)
-        p = run(["git", "push", authed, "HEAD"])
-    else:
-        p = run(["git", "push"])
+    try:
+        if url.startswith("https://"):
+            authed = url.replace("https://", f"https://x-access-token:{token}@", 1)
+            p = run(["git", "push", authed, "HEAD"])
+        else:
+            p = run(["git", "push"])
+    except subprocess.TimeoutExpired:
+        print("Push timed out (network likely blocked). Committed locally; "
+              "re-run publish.py with network access to push.")
+        return
     out = (p.stdout or p.stderr).strip()
     print(out)
     print("Pushed to origin." if p.returncode == 0 else "Push failed (see above).")
