@@ -65,18 +65,18 @@
 | done | XML 转 JSON | 将 XML 文件转换为 JSON 格式 | xml-to-json |
 | done | UUID 生成与校验 | 生成 UUID v4/v5 并校验 UUID 格式 | uuid-generator |
 | done | Gzip 压缩工具 | 压缩/解压 gzip 文件 | gzip-toolkit |
-| pending | MIME 类型检测 | 根据文件内容/扩展名检测 MIME 类型 | mime-type-checker |
-| pending | Unicode 字符查询 | 查询 Unicode 字符的名称、分类和码位 | unicode-info |
-| pending | Python 依赖提取 | 从 Python 源码中提取 import 生成 requirements | pip-req-extractor |
-| pending | Nginx 配置检查 | 检查 nginx 配置文件的常见问题 | nginx-config-lint |
-| pending | Docker Compose 检查 | 检查 docker-compose YAML 的最佳实践 | docker-compose-lint |
-| pending | Makefile 检查 | 检查 Makefile 的常见问题和风格 | makefile-lint |
-| pending | JSON 排序 | 递归排序 JSON 键名 | json-sort |
-| pending | CSV 合并 | 按共同键列合并多个 CSV 文件 | csv-merge |
-| pending | 文本差异比较 | 逐词文本差异对比，分类增删改 | text-diff |
-| pending | UTF-8 校验 | 验证文件是否为有效 UTF-8 编码 | utf8-validator |
-| pending | INI 配置解析 | 解析和校验 INI 配置文件 | ini-parser |
-| pending | TOML 检查 | 检查和校验 TOML 配置文件 | toml-linter |
+| done | MIME 类型检测 | 根据文件内容/扩展名检测 MIME 类型 | mime-type-checker |
+| done | Unicode 字符查询 | 查询 Unicode 字符的名称、分类和码位 | unicode-info |
+| done | Python 依赖提取 | 从 Python 源码中提取 import 生成 requirements | pip-req-extractor |
+| done | Nginx 配置检查 | 检查 nginx 配置文件的常见问题 | nginx-config-lint |
+| done | Docker Compose 检查 | 检查 docker-compose YAML 的最佳实践 | docker-compose-lint |
+| done | Makefile 检查 | 检查 Makefile 的常见问题和风格 | makefile-lint |
+| done | JSON 排序 | 递归排序 JSON 键名 | json-sort |
+| done | CSV 合并 | 按共同键列合并多个 CSV 文件 | csv-merge |
+| done | 文本差异比较 | 逐词文本差异对比，分类增删改 | text-diff |
+| done | UTF-8 校验 | 验证文件是否为有效 UTF-8 编码 | utf8-validator |
+| done | INI 配置解析 | 解析和校验 INI 配置文件 | ini-parser |
+| done | TOML 检查 | 检查和校验 TOML 配置文件 | toml-linter |
 | pending | 端口检查 | 检查主机指定 TCP 端口是否开放 | port-checker |
 | pending | Markdown 转 HTML | 将 Markdown 转为独立 HTML 文件 | markdown-to-html |
 | pending | HTML 表格提取 | 从 HTML 中提取表格数据为 CSV/JSON | html-table-extractor |
