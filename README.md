@@ -46,6 +46,7 @@ python skills/secret-leak-scanner/scripts/scan.py ./your-project
 | [conventional-commit](skills/conventional-commit/) | Validate and generate commit messages that follow the Conventional Commits 1.0.0 specification — type(scope)!: description format, body wrapping, footers. |
 | [cron-validator](skills/cron-validator/) | Validate standard 5-field and 6-field cron expressions, check field ranges and syntax, and compute next execution times without external dependencies. |
 | [css-unused-finder](skills/css-unused-finder/) | Find CSS selectors in a stylesheet that are not referenced by any HTML files, helping reduce CSS bloat without external dependencies. |
+| [csv-filter](skills/csv-filter/) | Filter CSV rows by column value conditions with comparison operators and regex matching without external dependencies. |
 | [csv-merge](skills/csv-merge/) | Merge multiple CSV files by a common key column without external dependencies. |
 | [csv-schema-audit](skills/csv-schema-audit/) | This skill should be used when auditing CSV headers and null values against a small JSON column schema, including required columns and duplicate-header detection. |
 | [csv-to-json](skills/csv-to-json/) | Convert CSV files to JSON with automatic type inference and flexible delimiter support without external dependencies. |
@@ -57,10 +58,12 @@ python skills/secret-leak-scanner/scripts/scan.py ./your-project
 | [dotenv-comparator](skills/dotenv-comparator/) | Compare two .env files and report added, removed, and changed keys with value diff output without external dependencies. |
 | [env-schema-checker](skills/env-schema-checker/) | This skill should be used when validating a dotenv file against a JSON Schema, including required environment variables, disallowed keys, and basic value types. |
 | [envdoc](skills/envdoc/) | Generate documentation from .env files with variable names, defaults, and comments without external dependencies. |
+| [escape-toolkit](skills/escape-toolkit/) | Escape and unescape strings for C, Python, HTML, JavaScript, and JSON contexts without external dependencies. |
 | [git-branch-cleaner](skills/git-branch-cleaner/) | Find merged local branches and stale remote-tracking branches for safe cleanup without external dependencies. |
 | [gitignore-audit](skills/gitignore-audit/) | This skill should be used when finding tracked Git files that match repository .gitignore rules and need cleanup review, including CI-friendly JSON output. |
 | [gzip-toolkit](skills/gzip-toolkit/) | Compress and decompress files with gzip, inspect archive metadata, and test integrity without external dependencies. |
 | [hash-checker](skills/hash-checker/) | Compute and verify file hashes (MD5/SHA1/SHA256/SHA512) without external dependencies. |
+| [hex-converter](skills/hex-converter/) | Convert numbers between hexadecimal, binary, decimal, and octal formats without external dependencies. |
 | [html-minifier](skills/html-minifier/) | Minify HTML by removing comments, collapsing whitespace, stripping optional tags, and eliminating redundant attributes — no external dependencies. |
 | [html-table-extractor](skills/html-table-extractor/) | Extract table data from HTML files and convert to CSV or JSON without external dependencies. |
 | [http-fixture-redactor](skills/http-fixture-redactor/) | This skill should be used when redacting sensitive values in JSON HTTP fixtures by recursive field name or field-name regular expression matching. |
@@ -71,6 +74,7 @@ python skills/secret-leak-scanner/scripts/scan.py ./your-project
 | [ip-geo-lookup](skills/ip-geo-lookup/) | Look up geographic location, ISP, and ASN info for IP addresses using the free ip-api.com service with JSON and text output. |
 | [json-config-diff](skills/json-config-diff/) | This skill should be used when comparing two JSON configuration files and reporting added, removed, or changed settings in text or JSON format. |
 | [json-flattener](skills/json-flattener/) | Flatten nested JSON objects to dot-notation key-value pairs and unflatten them back without external dependencies. |
+| [json-mask](skills/json-mask/) | Mask sensitive fields in JSON by key name patterns with configurable redaction strategies without external dependencies. |
 | [json-patch](skills/json-patch/) | Apply RFC 6902 JSON Patch operations (add, remove, replace, move, copy, test) without external dependencies. |
 | [json-path-query](skills/json-path-query/) | Query JSON and JSONL files with JSONPath-like expressions without external dependencies. |
 | [json-schema-linter](skills/json-schema-linter/) | Validate JSON files against a JSON Schema — supports type, required, properties, additionalProperties, enum, min/max, pattern, items, and nested objects using only the Python standard library. |
@@ -79,15 +83,19 @@ python skills/secret-leak-scanner/scripts/scan.py ./your-project
 | [jwt-decoder](skills/jwt-decoder/) | Decode and inspect JWT tokens — display header and payload, optionally check expiration, issued-at, and not-before claims without signature verification or external dependencies. |
 | [k8s-manifest-lint](skills/k8s-manifest-lint/) | Lint Kubernetes YAML manifests for best practices including resource limits, labels, probes, security contexts, and image tags without external dependencies. |
 | [license-auditor](skills/license-auditor/) | Audit local Node.js and Python dependency license metadata against allow and deny policies without external services. Supports strict mode, JSON, and CI exit codes. |
+| [line-counter](skills/line-counter/) | Count lines of code, blank lines, and comment lines by file extension without external dependencies. |
 | [log-parser](skills/log-parser/) | Parse and summarize log files by level and pattern — supports Python logging, Apache, nginx, and plain prefix formats with level filtering, regex matching, and JSON output. |
+| [lorem-generator](skills/lorem-generator/) | Generate Lorem ipsum placeholder text with configurable paragraphs, sentences, and words without external dependencies. |
 | [makefile-lint](skills/makefile-lint/) | Lint Makefiles for common issues and best practices without external dependencies. |
 | [markdown-linter](skills/markdown-linter/) | Check Markdown files for style issues — trailing whitespace, heading level jumps, long lines, missing EOF newline, multiple blank lines, inline HTML, and more — without external dependencies. |
 | [markdown-to-html](skills/markdown-to-html/) | Convert Markdown files to standalone HTML with embedded CSS styling without external dependencies. |
+| [markdown-toc](skills/markdown-toc/) | Generate a table of contents from Markdown headings without external dependencies. |
 | [mime-type-checker](skills/mime-type-checker/) | Detect file MIME types from content and extension with a built-in mapping database without external dependencies. |
 | [nginx-config-lint](skills/nginx-config-lint/) | Lint nginx configuration files for common issues and best practices without external dependencies. |
 | [npm-audit-summary](skills/npm-audit-summary/) | Parse npm audit JSON output and summarize vulnerabilities by severity, package, and dependency path for quick triage. |
 | [openapi-path-inventory](skills/openapi-path-inventory/) | This skill should be used when reading an OpenAPI JSON document to inventory HTTP methods, paths, operation IDs, and tags, optionally filtered by tag. |
 | [openapi-to-markdown](skills/openapi-to-markdown/) | Convert OpenAPI 3 JSON specifications to human-readable Markdown documentation — covers info, servers, endpoints, parameters, request/response schemas, and component definitions without external dependencies. |
+| [password-strength](skills/password-strength/) | Analyze password strength with entropy calculation, pattern detection, and scoring without external dependencies. |
 | [perf-budget](skills/perf-budget/) | This skill should be used when checking individual file sizes against performance budgets, defining file-size rules, producing machine-readable JSON results, or enforcing size limits in CI. |
 | [pip-req-extractor](skills/pip-req-extractor/) | Extract Python import statements from source files and generate requirements without external dependencies. |
 | [port-checker](skills/port-checker/) | Check whether TCP ports on a host are open or closed with timeout control and batch scanning without external dependencies. |
@@ -100,6 +108,7 @@ python skills/secret-leak-scanner/scripts/scan.py ./your-project
 | [secret-leak-scanner](skills/secret-leak-scanner/) | 扫描代码库中的 API Key、私钥、Token 等敏感凭证，支持 CI 退出码与 JSON 输出，防止密钥泄露被提交到仓库。 |
 | [semver-checker](skills/semver-checker/) | Parse, compare, and validate semantic version strings with range constraint checking without external dependencies. |
 | [shellcheck-lite](skills/shellcheck-lite/) | Lightweight static checker for shell scripts — detects unquoted variables, missing shebangs, deprecated backtick syntax, unsafe cd, useless cat and more without external dependencies. |
+| [slug-generator](skills/slug-generator/) | Generate URL-safe slugs from text with transliteration, custom separators, and case control without external dependencies. |
 | [sql-injection-scanner](skills/sql-injection-scanner/) | Scan source code for potential SQL injection patterns including string concatenation, format strings, and unsafe ORM usage with JSON and CI support. |
 | [ssl-cert-checker](skills/ssl-cert-checker/) | Check SSL/TLS certificate validity, expiration, and chain details for a domain without external dependencies. |
 | [svg-optimizer](skills/svg-optimizer/) | Remove bloat from SVG files — strip comments, metadata, editor namespaces, default attributes, and excess whitespace to produce smaller SVGs without external dependencies. |
@@ -115,6 +124,7 @@ python skills/secret-leak-scanner/scripts/scan.py ./your-project
 | [url-encoder](skills/url-encoder/) | Encode and decode URLs and query parameters with component-level control without external dependencies. |
 | [utf8-validator](skills/utf8-validator/) | Validate files for correct UTF-8 encoding and report byte-level errors without external dependencies. |
 | [uuid-generator](skills/uuid-generator/) | Generate UUID v4 and v5, validate UUID strings, and inspect UUID components without external dependencies. |
+| [xml-linter](skills/xml-linter/) | Lint XML files for common issues including unclosed tags, encoding declarations, and well-formedness without external dependencies. |
 | [xml-to-json](skills/xml-to-json/) | Convert XML files to JSON format with attribute and namespace handling without external dependencies. |
 | [yaml-linter](skills/yaml-linter/) | Check YAML files for common issues — tabs in indentation, trailing whitespace, inconsistent indent, duplicate keys, missing document markers, long lines, and colon spacing — without a full parser or external dependencies. |
 
