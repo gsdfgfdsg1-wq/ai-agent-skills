@@ -87,16 +87,16 @@
 | done | 差异高亮 | 生成带颜色高亮的并排差异对比 | diff-highlight |
 | done | 语义版本校验 | 解析、比较 semver 版本，检查范围约束 | semver-checker |
 | done | 文件权限计算 | Unix 文件权限符号式与八进制互转 | chmod-calculator |
-| pending | 代码行数统计 | 按扩展名统计目录下代码行数、空行、注释行 | line-counter |
-| pending | Markdown 目录生成 | 从 Markdown 标题生成目录（TOC） | markdown-toc |
-| pending | 字符串转义工具 | 不同语言（C/Python/HTML/JS）的字符串转义/反转义 | escape-toolkit |
-| pending | 进制转换 | 十六进制/二进制/十进制数字互转 | hex-converter |
-| pending | XML 代码检查 | 检查 XML 文件的常见问题（标签未关闭、编码声明等） | xml-linter |
-| pending | 密码强度分析 | 分析密码强度，计算熵值和评分 | password-strength |
-| pending | Slug 生成器 | 从文本生成 URL 安全的 slug | slug-generator |
-| pending | 占位文本生成 | 生成 Lorem ipsum 等占位文本 | lorem-generator |
-| pending | CSV 行过滤 | 按列值条件过滤 CSV 行 | csv-filter |
-| pending | JSON 敏感字段遮蔽 | 按键名模式遮蔽 JSON 中的敏感字段 | json-mask |
+| done | 代码行数统计 | 按扩展名统计目录下代码行数、空行、注释行 | line-counter |
+| done | Markdown 目录生成 | 从 Markdown 标题生成目录（TOC） | markdown-toc |
+| done | 字符串转义工具 | 不同语言（C/Python/HTML/JS）的字符串转义/反转义 | escape-toolkit |
+| done | 进制转换 | 十六进制/二进制/十进制数字互转 | hex-converter |
+| done | XML 代码检查 | 检查 XML 文件的常见问题（标签未关闭、编码声明等） | xml-linter |
+| done | 密码强度分析 | 分析密码强度，计算熵值和评分 | password-strength |
+| done | Slug 生成器 | 从文本生成 URL 安全的 slug | slug-generator |
+| done | 占位文本生成 | 生成 Lorem ipsum 等占位文本 | lorem-generator |
+| done | CSV 行过滤 | 按列值条件过滤 CSV 行 | csv-filter |
+| done | JSON 敏感字段遮蔽 | 按键名模式遮蔽 JSON 中的敏感字段 | json-mask |
 | pending | ASCII 码表 | ASCII 字符码位参考与查询 | ascii-table |
 | pending | 子网计算器 | IP 子网掩码与 CIDR 计算 | netmask-calculator |
 | pending | Procfile 检查 | 校验 Heroku Procfile 语法 | procfile-lint |
