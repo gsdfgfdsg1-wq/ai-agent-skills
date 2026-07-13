@@ -12,3 +12,4 @@ config.env
 # OS
 .DS_Store
 Thumbs.db
+test_hash_tmp.txt
