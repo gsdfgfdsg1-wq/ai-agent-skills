@@ -36,6 +36,7 @@ python skills/secret-leak-scanner/scripts/scan.py ./your-project
 | --- | --- |
 | [a11y-audit](skills/a11y-audit/) | Statically audit HTML for common accessibility issues including missing document language, image alt text, control labels, accessible button names, heading jumps, and duplicate IDs. |
 | [api-contract-test](skills/api-contract-test/) | Validate HTTP response status codes and JSON bodies against OpenAPI 3 JSON response schemas without external dependencies. Supports local refs and common JSON Schema constraints. |
+| [ascii-table](skills/ascii-table/) | Look up 7-bit ASCII values by decimal, hexadecimal, or character input, and print ASCII ranges in text or JSON without external dependencies. |
 | [base64-toolkit](skills/base64-toolkit/) | Encode and decode Base64 strings with auto-detection, URL-safe mode, and file support without external dependencies. |
 | [broken-markdown-links](skills/broken-markdown-links/) | This skill should be used when checking local relative Markdown file links and heading anchors for broken references, including JSON output and CI exit codes. |
 | [bundle-file-report](skills/bundle-file-report/) | This skill should be used when recursively ranking file sizes in a build or bundle directory, reporting the largest files, limiting output to Top N entries, or exporting file-size reports as JSON. |
@@ -61,13 +62,16 @@ python skills/secret-leak-scanner/scripts/scan.py ./your-project
 | [escape-toolkit](skills/escape-toolkit/) | Escape and unescape strings for C, Python, HTML, JavaScript, and JSON contexts without external dependencies. |
 | [git-branch-cleaner](skills/git-branch-cleaner/) | Find merged local branches and stale remote-tracking branches for safe cleanup without external dependencies. |
 | [gitignore-audit](skills/gitignore-audit/) | This skill should be used when finding tracked Git files that match repository .gitignore rules and need cleanup review, including CI-friendly JSON output. |
+| [graphql-schema-lint](skills/graphql-schema-lint/) | Lint GraphQL SDL schema files for basic type and field naming, duplicate definitions, unmatched braces, and optional line-length limits without graphql dependencies. |
 | [gzip-toolkit](skills/gzip-toolkit/) | Compress and decompress files with gzip, inspect archive metadata, and test integrity without external dependencies. |
 | [hash-checker](skills/hash-checker/) | Compute and verify file hashes (MD5/SHA1/SHA256/SHA512) without external dependencies. |
 | [hex-converter](skills/hex-converter/) | Convert numbers between hexadecimal, binary, decimal, and octal formats without external dependencies. |
+| [hosts-file-parser](skills/hosts-file-parser/) | Parse and validate hosts files, collecting IP-to-alias mappings while identifying duplicate mappings and malformed entries. This skill should be used when auditing, migrating, or debugging hosts file content. |
 | [html-minifier](skills/html-minifier/) | Minify HTML by removing comments, collapsing whitespace, stripping optional tags, and eliminating redundant attributes — no external dependencies. |
 | [html-table-extractor](skills/html-table-extractor/) | Extract table data from HTML files and convert to CSV or JSON without external dependencies. |
 | [http-fixture-redactor](skills/http-fixture-redactor/) | This skill should be used when redacting sensitive values in JSON HTTP fixtures by recursive field name or field-name regular expression matching. |
 | [http-header-checker](skills/http-header-checker/) | Check HTTP security response headers (CSP, HSTS, X-Frame-Options, etc.) for a URL and report missing or misconfigured headers. |
+| [http-status-codes](skills/http-status-codes/) | Look up common HTTP response status codes by code, category, or keyword with optional JSON output. |
 | [i18n-extractor](skills/i18n-extractor/) | This skill should be used when extracting user-facing literal strings from JavaScript or TypeScript t(...) and i18n.t(...) calls into a unique JSON translation catalog. |
 | [image-meta-scraper](skills/image-meta-scraper/) | Extract image metadata including dimensions, format, file size, and basic EXIF data from JPEG/PNG/GIF/BMP/WebP files without external dependencies. |
 | [ini-parser](skills/ini-parser/) | Parse, validate, and query INI configuration files without external dependencies. |
@@ -79,6 +83,7 @@ python skills/secret-leak-scanner/scripts/scan.py ./your-project
 | [json-path-query](skills/json-path-query/) | Query JSON and JSONL files with JSONPath-like expressions without external dependencies. |
 | [json-schema-linter](skills/json-schema-linter/) | Validate JSON files against a JSON Schema — supports type, required, properties, additionalProperties, enum, min/max, pattern, items, and nested objects using only the Python standard library. |
 | [json-sort](skills/json-sort/) | Recursively sort JSON object keys alphabetically without external dependencies. |
+| [json-template](skills/json-template/) | Safely replace {{ dotted.path }} placeholders in a parsed JSON template using values from a JSON object, without external dependencies. |
 | [jsonl-deduper](skills/jsonl-deduper/) | This skill should be used when removing duplicate JSONL records by a specified dotted object key while keeping either the first or last occurrence and producing JSON statistics. |
 | [jwt-decoder](skills/jwt-decoder/) | Decode and inspect JWT tokens — display header and payload, optionally check expiration, issued-at, and not-before claims without signature verification or external dependencies. |
 | [k8s-manifest-lint](skills/k8s-manifest-lint/) | Lint Kubernetes YAML manifests for best practices including resource limits, labels, probes, security contexts, and image tags without external dependencies. |
@@ -91,6 +96,7 @@ python skills/secret-leak-scanner/scripts/scan.py ./your-project
 | [markdown-to-html](skills/markdown-to-html/) | Convert Markdown files to standalone HTML with embedded CSS styling without external dependencies. |
 | [markdown-toc](skills/markdown-toc/) | Generate a table of contents from Markdown headings without external dependencies. |
 | [mime-type-checker](skills/mime-type-checker/) | Detect file MIME types from content and extension with a built-in mapping database without external dependencies. |
+| [netmask-calculator](skills/netmask-calculator/) | Calculate IPv4 CIDR network details including network address, broadcast address, subnet mask, host range, and host counts in text or JSON without external dependencies. |
 | [nginx-config-lint](skills/nginx-config-lint/) | Lint nginx configuration files for common issues and best practices without external dependencies. |
 | [npm-audit-summary](skills/npm-audit-summary/) | Parse npm audit JSON output and summarize vulnerabilities by severity, package, and dependency path for quick triage. |
 | [openapi-path-inventory](skills/openapi-path-inventory/) | This skill should be used when reading an OpenAPI JSON document to inventory HTTP methods, paths, operation IDs, and tags, optionally filtered by tag. |
@@ -99,7 +105,9 @@ python skills/secret-leak-scanner/scripts/scan.py ./your-project
 | [perf-budget](skills/perf-budget/) | This skill should be used when checking individual file sizes against performance budgets, defining file-size rules, producing machine-readable JSON results, or enforcing size limits in CI. |
 | [pip-req-extractor](skills/pip-req-extractor/) | Extract Python import statements from source files and generate requirements without external dependencies. |
 | [port-checker](skills/port-checker/) | Check whether TCP ports on a host are open or closed with timeout control and batch scanning without external dependencies. |
+| [port-service-lookup](skills/port-service-lookup/) | Look up common TCP and UDP port-to-service mappings from an offline built-in table, with protocol filtering and JSON output. This skill should be used when identifying standard service ports without querying a network. |
 | [pr-review-checklist](skills/pr-review-checklist/) | Review pull request changes against a practical checklist for test coverage, documentation, dependencies, delivery files, and sensitive paths. Supports git diff, stdin, JSON, and CI exit codes. |
+| [procfile-lint](skills/procfile-lint/) | Lint Procfile process declarations for malformed types, empty commands, and duplicate process types using only the Python standard library. |
 | [py-dead-code](skills/py-dead-code/) | Detect unused imports and unreachable code in Python files using AST analysis without external dependencies. |
 | [qr-code-generator](skills/qr-code-generator/) | Generate SVG-format QR codes from text or URLs without external dependencies. |
 | [readme-section-audit](skills/readme-section-audit/) | This skill should be used when checking a Markdown README for required H2 sections, duplicate headings, and a bounded summary length in CI or local validation. |
@@ -107,6 +115,7 @@ python skills/secret-leak-scanner/scripts/scan.py ./your-project
 | [release-note-linter](skills/release-note-linter/) | This skill should be used when linting Markdown release notes for version and date headings, required sections, unreleased markers, and consistent issue reference style in CI or local checks. |
 | [secret-leak-scanner](skills/secret-leak-scanner/) | 扫描代码库中的 API Key、私钥、Token 等敏感凭证，支持 CI 退出码与 JSON 输出，防止密钥泄露被提交到仓库。 |
 | [semver-checker](skills/semver-checker/) | Parse, compare, and validate semantic version strings with range constraint checking without external dependencies. |
+| [shell-history-analyzer](skills/shell-history-analyzer/) | Parse Bash or Zsh history text, ignore blank lines and timestamps, and report most-used commands with optional JSON output. |
 | [shellcheck-lite](skills/shellcheck-lite/) | Lightweight static checker for shell scripts — detects unquoted variables, missing shebangs, deprecated backtick syntax, unsafe cd, useless cat and more without external dependencies. |
 | [slug-generator](skills/slug-generator/) | Generate URL-safe slugs from text with transliteration, custom separators, and case control without external dependencies. |
 | [sql-injection-scanner](skills/sql-injection-scanner/) | Scan source code for potential SQL injection patterns including string concatenation, format strings, and unsafe ORM usage with JSON and CI support. |
@@ -124,6 +133,7 @@ python skills/secret-leak-scanner/scripts/scan.py ./your-project
 | [url-encoder](skills/url-encoder/) | Encode and decode URLs and query parameters with component-level control without external dependencies. |
 | [utf8-validator](skills/utf8-validator/) | Validate files for correct UTF-8 encoding and report byte-level errors without external dependencies. |
 | [uuid-generator](skills/uuid-generator/) | Generate UUID v4 and v5, validate UUID strings, and inspect UUID components without external dependencies. |
+| [whitespace-remover](skills/whitespace-remover/) | Remove trailing spaces and tabs, then collapse blank lines at the end of UTF-8 text files using only Python standard library. |
 | [xml-linter](skills/xml-linter/) | Lint XML files for common issues including unclosed tags, encoding declarations, and well-formedness without external dependencies. |
 | [xml-to-json](skills/xml-to-json/) | Convert XML files to JSON format with attribute and namespace handling without external dependencies. |
 | [yaml-linter](skills/yaml-linter/) | Check YAML files for common issues — tabs in indentation, trailing whitespace, inconsistent indent, duplicate keys, missing document markers, long lines, and colon spacing — without a full parser or external dependencies. |

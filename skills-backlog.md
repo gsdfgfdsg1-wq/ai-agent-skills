@@ -97,16 +97,16 @@
 | done | 占位文本生成 | 生成 Lorem ipsum 等占位文本 | lorem-generator |
 | done | CSV 行过滤 | 按列值条件过滤 CSV 行 | csv-filter |
 | done | JSON 敏感字段遮蔽 | 按键名模式遮蔽 JSON 中的敏感字段 | json-mask |
-| pending | ASCII 码表 | ASCII 字符码位参考与查询 | ascii-table |
-| pending | 子网计算器 | IP 子网掩码与 CIDR 计算 | netmask-calculator |
-| pending | Procfile 检查 | 校验 Heroku Procfile 语法 | procfile-lint |
-| pending | GraphQL Schema 检查 | 检查 GraphQL Schema 文件的风格和问题 | graphql-schema-lint |
-| pending | Hosts 文件解析 | 解析和校验 hosts 文件条目 | hosts-file-parser |
-| pending | 端口服务查询 | 查询端口号对应的知名服务名 | port-service-lookup |
-| pending | 尾部空白清理 | 清理文本文件中的尾部空白和多余空行 | whitespace-remover |
-| pending | JSON 模板渲染 | 用变量替换渲染 JSON 模板 | json-template |
-| pending | HTTP 状态码查询 | HTTP 状态码参考与搜索 | http-status-codes |
-| pending | Shell 历史分析 | 分析 shell 命令历史，统计最常用命令 | shell-history-analyzer |
+| done | ASCII 码表 | ASCII 字符码位参考与查询 | ascii-table |
+| done | 子网计算器 | IP 子网掩码与 CIDR 计算 | netmask-calculator |
+| done | Procfile 检查 | 校验 Heroku Procfile 语法 | procfile-lint |
+| done | GraphQL Schema 检查 | 检查 GraphQL Schema 文件的风格和问题 | graphql-schema-lint |
+| done | Hosts 文件解析 | 解析和校验 hosts 文件条目 | hosts-file-parser |
+| done | 端口服务查询 | 查询端口号对应的知名服务名 | port-service-lookup |
+| done | 尾部空白清理 | 清理文本文件中的尾部空白和多余空行 | whitespace-remover |
+| done | JSON 模板渲染 | 用变量替换渲染 JSON 模板 | json-template |
+| done | HTTP 状态码查询 | HTTP 状态码参考与搜索 | http-status-codes |
+| done | Shell 历史分析 | 分析 shell 命令历史，统计最常用命令 | shell-history-analyzer |
 | pending | Sitemap 校验 | 校验 XML Sitemap 结构和 URL | sitemap-validator |
 | pending | Robots.txt 解析 | 解析和校验 robots.txt 规则 | robots-txt-parser |
 | pending | Python 兼容性检查 | 检查 Python 代码的版本兼容性语法 | python-compat-checker |
